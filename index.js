@@ -47,10 +47,12 @@ export default function Skeleton(props) {
         Animated.timing(fadeAnim, {
           toValue: 0.6,
           duration: pulseSpeed,
+          useNativeDriver: true
         }),
         Animated.timing(fadeAnim, {
           toValue: 1,
           duration: pulseSpeed,
+          useNativeDriver: true
         }),
       ])
     ).start();
